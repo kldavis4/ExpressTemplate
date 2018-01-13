@@ -4,6 +4,6 @@ all:
 	@echo "Nothing to do for $@"
 
 install:
-	mkdir ${DESTDIR}
+	mkdir -p ${DESTDIR}
 	yarn
 	rsync -rEL . ${DESTDIR}
